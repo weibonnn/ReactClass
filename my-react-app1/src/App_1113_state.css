@@ -1,0 +1,121 @@
+ *{
+    margin:0px;
+    padding:0px;
+ }
+ h2,p {
+	font-size: 100%;
+	font: inherit; /* inherit 繼承原本的設定 */
+	vertical-align: baseline;
+    line-height: 1.65;
+}
+/* 重置字體 */
+
+body{
+    color: #3a3a3a;
+    
+}
+p {
+    font-size: 14px;
+  }
+img {
+    display: block;
+    width: 100%;
+}
+
+main{
+    width: 100%;
+
+}
+#feature{
+    display: flex;
+    justify-content:space-between;
+    margin: 20px 65px;
+}
+
+#feature h2{
+    color:#DC3545;
+    font-size:24px
+}
+
+.featureList{
+    text-align: center;
+    margin:40px;
+}
+
+#mainTitle{
+    display: block;
+    font-size:20px;
+    color:white;
+    background-color: #DC3545;
+    text-align: center;
+    padding:20px 64px;
+}
+
+#recommendClass{
+    margin:40px;
+}
+.rec{
+    text-align: center;
+    color:#28A745;
+    font-size:20px;
+    font-weight: bold;
+}
+
+#recommend{
+    display: flex;
+
+    justify-content:center;
+    margin:20px;
+}
+
+.card{
+    width: 260px;
+    padding:20px;
+    margin:0 12px;
+    box-shadow: 0px 0px 5px #a7a7a7;
+    
+}
+.card h2{
+    font-size:20px;
+    font-weight: bold;
+    line-height: 1.65;
+    margin: 8px 0;
+}
+.detail{
+    color:#A5B3CD;
+}
+
+.price{
+    text-align: center;
+}
+
+.price p{
+    font-size: 20px;
+    font-weight: bolder;
+    color:#DC3545;
+    margin:4px;
+}
+.price span{
+    color:#222222;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+button{
+    width: 100%;
+    color:#fff;
+    border: none;
+    background-color: #DC3545;
+    padding:10px;
+    border-radius:4px;
+}
+
+footer{
+    display: block;
+    font-size:20px;
+    color:#FFFFFF;
+    background-color: #3c3c3c;
+    text-align: center;
+    padding:20px 64px;
+}

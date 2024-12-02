@@ -1,36 +1,37 @@
+import { useEffect } from "react"
+import axios from 'axios';
 import "./App.css"
-import ShowClass from "./ShowClass"
-import ShowContent from "./ShowContent"
+
 
 function App() {
 
+  // useEffect(()=>{
+  //   (async()=>{
+  //     const data = await axios.get('./F-C0032-001.json');
+  //     const {location} = data.data.cwaopendata.dataset;
+  //     console.log(location);
+  //   })
+  // },[])
 
   return (
     <>
-      <header>
-        <div id="banner">
-          <img src="./images/banner.jpg" alt="頁首廣告" />
-        </div>
-      </header>
-      <main>
-        <section id="feature">
-          <ShowContent />
-        </section>
 
-        <div id="mainTitle">
-          <h2>讓學習成為一種習慣</h2>
-        </div>
+      <section>
+          <h2>36小時天氣預報</h2>
+          <h3>三十六小時天氣預報</h3>
 
-        <section id="recommendClass">
-          <h2 className="rec">推薦課程</h2>
-          <div id="recommend">
+        <div>
+          <h3>臺北市</h3>
+          <div>
+            <p>2日</p>
+            <p>上午6:00~下午6:00</p>
+            <figure className="weather"><img src="./images/weatherIcon/晴時多雲.svg" alt="" /></figure>
+            <p className="rains" ><img src="./images/weatherIcon/umbrella-solid.svg" alt="" />10%</p>
 
-            <ShowClass />
 
           </div>
-        </section>
-      </main>
-      <footer><h2>尤御維</h2></footer>
+        </div>
+      </section>
 
     </>
   )

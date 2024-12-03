@@ -6,17 +6,26 @@ import { IoUmbrella } from "react-icons/io5";
 
 function App() {
 
-  // useEffect(()=>{
-  //   (async()=>{
-  //     const data = await axios.get('./F-C0032-001.json');
-  //     // const {location} = data.data.cwaopendata.dataset;
-  //     console.log(location);
-  //   })
-  // },[])
+  useEffect(()=>{
+    (async()=>{
+      // 本地端要在web-serve伺服器下才可以執行
+      // const data = await axios.get('./F-C0032-001.json');
+
+      // json的連結必須是公開網址下的來源
+      const data = await axios.get('https://weibonnn.github.io/ReactClass/F-C0032-001.json');
+      //console.log(location);
+      
+      // locationName => 縣市名
+      // elementName => Wx => 天氣概況
+      // elementName => PoP => 降雨率
+
+      // const {location} = data.data.cwaopendata.dataset;
+    })()
+  },[])
 
   return (
     <>
-    
+
       <div className="wrap">
         <h2>36小時天氣預報</h2>
         {/* 一列兩欄 */}

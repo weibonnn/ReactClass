@@ -6,13 +6,13 @@ import { IoUmbrella } from "react-icons/io5";
 
 function App() {
 
-  useEffect(()=>{
-    (async()=>{
-      const data = await axios.get('./F-C0032-001.json');
-      // const {location} = data.data.cwaopendata.dataset;
-      console.log(location);
-    })
-  },[])
+  // useEffect(()=>{
+  //   (async()=>{
+  //     const data = await axios.get('./F-C0032-001.json');
+  //     // const {location} = data.data.cwaopendata.dataset;
+  //     console.log(location);
+  //   })
+  // },[])
 
   return (
     <>

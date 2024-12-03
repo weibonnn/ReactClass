@@ -16,8 +16,7 @@ function App() {
 
   return (
     <>
-
-
+    
       <div className="wrap">
         <h2>36小時天氣預報</h2>
         {/* 一列兩欄 */}
